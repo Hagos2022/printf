@@ -134,13 +134,17 @@ int _printf (const char *format, ...)
 
 
 
-Format Specifiers
+--------------
 
 
 
 
+### Format Specifiers
 
-------------------
+
+
+
+----------------
 
 
 
@@ -219,11 +223,11 @@ R - Rot 13'ed string
 
 
 
-Length	di	u  o  x  X
+Length		di		u  o  x  X
 
-l	long 	unsigned long
+l		long 		unsigned long
 
-h 	short 	unsigned short
+h 		short 		unsigned short
 
 
 
