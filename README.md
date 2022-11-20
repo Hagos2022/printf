@@ -135,6 +135,7 @@ Many other specifiers and flags were added and by combinig those the _printf() f
 
 Where the specifier character at the end is the most significant component, since it defines the type and the interpretation of its corresponding argument:
 
+
  Specifier | Output | Example
  
 ------------ |:-------------: |-----------:
@@ -143,7 +144,7 @@ Where the specifier character at the end is the most significant component, sinc
  
  s | String of characters | ALX
  
- % | A % followed by another % character will write a single % to the stream| %
+ % | A % followed by another % character will write a single % to the stream | %
  
   i and d | Signed decimal integer | 98
   
@@ -157,7 +158,7 @@ Where the specifier character at the end is the most significant component, sinc
  
  X | Unsigned hexadecimal integer (uppercase) | 36264EB
  
- r | Reversed string | gnirts |
+ r | Reversed string | gnirts 
  
  R | Rot13 string | cevags
 
