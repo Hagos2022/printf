@@ -129,41 +129,43 @@ Many other specifiers and flags were added and by combinig those the _printf() f
 
 
 
-------------
+ > **format** -> C string that contains the text to be written to stdout.
+ 
 
 
+Where the specifier character at the end is the most significant component, since it defines the type and the interpretation of its corresponding argument:
 
-###### Specifiers
+ Specifier | Output | Example
+ 
+------------ | ------------- |-----------
 
+ c | Character | A
+ 
+ s | String of characters | Holberton
+ 
+ % | A % followed by another % character will write a single % to the stream| %
+ 
+  i and d | Signed decimal integer | 98
+  
+ b | Unsigned binary | 10101
+ 
+ u | Unsigned decimal integer | 98
+ 
+ o | Unsigned octal | 5523
+ 
+ x | Unsigned hexadecimal integer (lowercase) | 36264eb
+ 
+ X | Unsigned hexadecimal integer (uppercase) | 36264EB
+ 
+ r | Reversed string | gnirts |
+ 
+ R | Rot13 string | cevags
+ 
+##### Return Value.
 
+On **success**, the **total number** of characters written is returned.
 
-Specifier                |Output                        |Examples |
-
-|----------------|-------------------------------|-----------------------------|
-
-| `c` | Character | y |
-
-| `d` or `i` | Signed integer | 1024, -1024 |
-
-| `s` | String of characters | Hello Holberton |
-
-| `b` | Binary Representation of unsigned integer | 01010110 |
-
-| `u` | Unsigned integer | 1024 |
-
-| `o` | Unsigned octal | 432 |
-
-| `x` | Unsigned hexadecimal integer | 3ca |
-
-| `X` | Unsigned hexadecimal integer (uppercase) | 3CA |
-
-| `S` | String with hex-ascii value replacing special chars | \x0A\x0A |
-
-| `p` | Pointer address | 0x403212 |
-
-| `r` | Reversed string of characters | dlroW olleH |
-
-| `R` | ROT13 Translation of string | Uryyb |
+If a writing error occurs, the error indicator (ferror) is set and a negative number is returned.
 
 
 
@@ -171,19 +173,19 @@ Specifier                |Output                        |Examples |
 
 
 
-|Flag                |Description                        |
+|Flag              |Description                        |
 
 |----------------|-------------------------------|
 
-| `-` |Left-justify the output within the field width that was given; Right justification is the default (see _width_ sub-specifier). |
+| - |Left-justify the output within the field width that was given; Right justification is the default (see _width_ sub-specifier). |
 
-| `+` |Preceeds the result with a plus or minus sign (`+` or `-`) even for positive numbers. By default, only negative numbers are preceded with a `-` sign. |
+| + |Preceeds the result with a plus or minus sign (`+` or `-`) even for positive numbers. By default, only negative numbers are preceded with a `-` sign. |
 
-| `(space)` |If no sign is going to be written, a blank space is inserted before the value. |
+| (space) |If no sign is going to be written, a blank space is inserted before the value. |
 
-| `#` |Used with `o`, `x` or `X` specifiers the value is preceeded with 0, 0x or 0X respectively for values different than zero. |
+| # |Used with `o`, `x` or `X` specifiers the value is preceeded with 0, 0x or 0X respectively for values different than zero. |
 
-| `0` |Left-pads the number with zeroes (`0`) instead of spaces when padding is specified (see _width_ sub-specifier). |
+| 0 |Left-pads the number with zeroes (`0`) instead of spaces when padding is specified (see _width_ sub-specifier). |
 
 
 
