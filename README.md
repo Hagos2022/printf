@@ -1,4 +1,4 @@
-# 0x11. C - printf
+# 0x11.C - printf
 
 
 
@@ -36,19 +36,19 @@ These arguments are placed using the percentage '%' operator
 
 
 
-write (man 2 write);
+- write (man 2 write)
 
-malloc (man 3 malloc);
+- malloc (man 3 malloc)
 
-free (man 3 free);
+- free (man 3 free)
 
-va_start (man 3 va_start);
+- va_start (man 3 va_start)
 
-va_end (man 3 va_end);
+- va_end (man 3 va_end)
 
-va_copy (man 3 va_copy);
+- va_copy (man 3 va_copy)
 
-va_arg (man 3 va_arg);
+- va_arg (man 3 va_arg)
 
 
 
@@ -68,7 +68,7 @@ The code must be compiled this way:
 
 
 
-**$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c**
+$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c
 
 
 
@@ -76,7 +76,7 @@ As a consequence, be careful not to push any c file containing a main function i
 
 
 
-The main files will include your main header file (main.h): **#include mainn.h**
+The main files will include your main header file (main.h): **#include main.h**
 
 
 
@@ -103,15 +103,15 @@ The main files will include your main header file (main.h): **#include mainn.h**
 
 **Examples:**
 
- - Basic String: _printf("%s World", "Hello");`
+ - Basic String: _printf("%s World", "Hello");
  
-  - Output: Hello World
+	- Output: Hello World
   
 
 
-- Print integers: _printf("This is an array element: arr[%d]:%c", 32, arr[32]);`
+- Print integers: _printf("This is an array element: arr[%d]:%c", 32, arr[32]);
 
-  - Output: This is an array element arr[32]:A
+  	- Output: This is an array element arr[32]:A
   
 
 
@@ -145,7 +145,7 @@ Specifier                |Output                        |Examples |
 
 | `d` or `i` | Signed integer | 1024, -1024 |
 
-| `s` | String of characters | Hello World |
+| `s` | String of characters | Hello Holberton |
 
 | `b` | Binary Representation of unsigned integer | 01010110 |
 
@@ -167,7 +167,7 @@ Specifier                |Output                        |Examples |
 
 
 
-###### Flags
+###### Flags (In development...)
 
 
 
@@ -187,7 +187,7 @@ Specifier                |Output                        |Examples |
 
 
 
-###### Width
+###### Width (In development...)
 
 
 
@@ -201,7 +201,7 @@ Specifier                |Output                        |Examples |
 
 
 
-### Precision
+### Precision (In development...)
 
 
 
@@ -213,7 +213,7 @@ Specifier                |Output                        |Examples |
 
 
 
-### Lenght modifiers
+### Lenght modifiers (In development...)
 
 
 
@@ -229,9 +229,9 @@ Specifier                |Output                        |Examples |
 
 
 
+------------
 
 
------------
 
 
 
