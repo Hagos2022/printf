@@ -123,126 +123,117 @@ Many other specifiers and flags were added and by combinig those the _printf() f
 
 
 
-#### Specifiers & Examples
+#### Function Prototype:
 
+int _printf (const char *format, ...)
 
+#### Syntax:
 
+%[flags] [width] [.precision][length][type]
 
 
- > **format** -> C string that contains the text to be written to stdout.
- 
 
 
-Where the specifier character at the end is the most significant component, since it defines the type and the interpretation of its corresponding argument:
+Format Specifiers
 
 
- Specifier | Output | Example
- 
------------- |:-------------: |-----------:
 
- c | Character | A
- 
- s | String of characters | ALX
- 
- % | A % followed by another % character will write a single % to the stream | %
- 
-  i and d | Signed decimal integer | 98
-  
- b | Unsigned binary | 10101
- 
- u | Unsigned decimal integer | 98
- 
- o | Unsigned octal | 5523
- 
- x | Unsigned hexadecimal integer (lowercase) | 36264eb
- 
- X | Unsigned hexadecimal integer (uppercase) | 36264EB
- 
- r | Reversed string | gnirts 
- 
- R | Rot13 string | cevags
 
 
+------------------
 
-##### Return Value:-
 
-On **success**, the **total number** of characters written is returned.
 
-If a writing error occurs, the error indicator (ferror) is set and a negative number is returned.
 
 
+c - Single character
 
-###### Flags (In development...)
+s - String of characters
 
+d or i- Signed decimal integer
 
+b - Binary
 
-|Flag              |Description                        |
+u - Unsigned decimal integer
 
-|----------------|:------------------------------:|
+o - unsigned octal
 
-| - |Left-justify the output within the field width that was given; Right justification is the default (see _width_ sub-specifier). |
+x - unsigned hexadecimal integer (Lowercase)
 
-| + |Preceeds the result with a plus or minus sign (`+` or `-`) even for positive numbers. By default, only negative numbers are preceded with a `-` sign. |
+X - unsigned hexadecimal integer (Uppercase)
 
-| (space) |If no sign is going to be written, a blank space is inserted before the value. |
+S - unicode string
 
-| # |Used with `o`, `x` or `X` specifiers the value is preceeded with 0, 0x or 0X respectively for values different than zero. |
+p - pointer address
 
-| 0 |Left-pads the number with zeroes (`0`) instead of spaces when padding is specified (see _width_ sub-specifier). |
+% - %% will write single % character
 
+r - Reversed string
 
+R - Rot 13'ed string
 
-###### Width (In development...)
 
 
 
-|Width                |Description                        |
 
-|----------------|:---------------------------:|
+-----------------
 
-| `(number)` |Minimum number of characters to be printed. If the value to be printed is shorter than this number, the result is padded with blank spaces. The value is not truncated even if the result is larger.|
 
-| `*` | The _width_ is not specified in the _format_ string, but as an additional integer value argument preceding the argument that has to be formatted.|
 
 
 
-### Precision (In development...)
+#### Flags:
 
 
 
-|.Precision               |Description                        |
 
-|----------------|:------------------------------:|
+----------------------
 
-| `.(number)` |**For integer specifiers (`d`, `i`, `o`, `u`, `x`, `X`):** _precision_ specifies the minimum number of digits to be written. If the value to be written is shorter than this number, the result is padded with leading zeros. The value is not truncated even if the result is longer. A _precision_ of 0 means that no character is written for the value 0. **For `s`**: this is the maximum number of characters to be printed. By default all characters are printed until the ending null character is encountered. If the period is specified without an explicit value for _precision_, 0 is assumed. |
 
 
 
-### Lenght modifiers (In development...)
+**#**: Use with o, x or X specifiers, the value is proceded with 0,0x, 0X respectively for nonzero value
 
+**0**: Left pads number with zeroes
 
+**+**: Using sign '+' for positive numbers
 
-|Modifier/Specifier  |`d` & `i`  |`u`, `o`, `x`, `X` |`c` |`s` |`p` |
+**space**: Blank space inserted befores the value
 
-|----------------|:---------:|:------------:|:-------------:|:-----:|------:|
+**-**: Left justify with given field width
 
-| `none` | int |unsigned int | int| char pointer| void pointer |
 
-| `h` |short int|unsigned short int |     |     |              |
 
-| `l` |long int |unsigned long int  |     |     |              |
 
+-------------------
 
 
-------------
 
 
+#### Length modifiers:
 
 
 
+------------------
 
 
-#### Tasks required for this project
+
+
+Length	di	u  o  x  X
+
+l	long 	unsigned long
+
+h 	short 	unsigned short
+
+
+
+
+---------------------
+
+
+
+
+### Tasks required for this project
 
 
 
