@@ -137,11 +137,11 @@ Where the specifier character at the end is the most significant component, sinc
 
  Specifier | Output | Example
  
------------- | ------------- |-----------
+------------ |:-------------: |-----------:
 
  c | Character | A
  
- s | String of characters | Holberton
+ s | String of characters | ALX
  
  % | A % followed by another % character will write a single % to the stream| %
  
@@ -160,8 +160,10 @@ Where the specifier character at the end is the most significant component, sinc
  r | Reversed string | gnirts |
  
  R | Rot13 string | cevags
- 
-##### Return Value.
+
+
+
+##### Return Value:-
 
 On **success**, the **total number** of characters written is returned.
 
@@ -175,7 +177,7 @@ If a writing error occurs, the error indicator (ferror) is set and a negative nu
 
 |Flag              |Description                        |
 
-|----------------|-------------------------------|
+|----------------|:------------------------------:|
 
 | - |Left-justify the output within the field width that was given; Right justification is the default (see _width_ sub-specifier). |
 
@@ -195,7 +197,7 @@ If a writing error occurs, the error indicator (ferror) is set and a negative nu
 
 |Width                |Description                        |
 
-|----------------|-------------------------------|
+|----------------|:---------------------------:|
 
 | `(number)` |Minimum number of characters to be printed. If the value to be printed is shorter than this number, the result is padded with blank spaces. The value is not truncated even if the result is larger.|
 
@@ -209,7 +211,7 @@ If a writing error occurs, the error indicator (ferror) is set and a negative nu
 
 |.Precision               |Description                        |
 
-|----------------|-------------------------------|
+|----------------|:------------------------------:|
 
 | `.(number)` |**For integer specifiers (`d`, `i`, `o`, `u`, `x`, `X`):** _precision_ specifies the minimum number of digits to be written. If the value to be written is shorter than this number, the result is padded with leading zeros. The value is not truncated even if the result is longer. A _precision_ of 0 means that no character is written for the value 0. **For `s`**: this is the maximum number of characters to be printed. By default all characters are printed until the ending null character is encountered. If the period is specified without an explicit value for _precision_, 0 is assumed. |
 
@@ -221,7 +223,7 @@ If a writing error occurs, the error indicator (ferror) is set and a negative nu
 
 |Modifier/Specifier  |`d` & `i`  |`u`, `o`, `x`, `X` |`c` |`s` |`p` |
 
-|----------------|---------|------------|-------------|-----|-------|
+|----------------|:---------:|:------------:|:-------------:|:-----:|------:|
 
 | `none` | int |unsigned int | int| char pointer| void pointer |
 
