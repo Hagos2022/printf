@@ -115,7 +115,7 @@ The main files will include your main header file (main.h): **#include main.h**
   
 
 
-Many other specifiers and flags were added and by combinig those the _printf() function generate a different ouput. The following list are the specifiers and flags allowed.
+Many other specifiers and flags were added and by combinig those the _printf() function generate a different ouput.
 
 
 
@@ -186,7 +186,7 @@ R - Rot 13'ed string
 
 
 
-#### Flags:
+### Flags:
 
 
 
@@ -214,7 +214,7 @@ R - Rot 13'ed string
 
 
 
-#### Length modifiers:
+### Length modifiers:
 
 
 
@@ -237,7 +237,7 @@ h 		short 		unsigned short
 
 
 
-### Tasks required for this project
+## Tasks required for this project
 
 
 
