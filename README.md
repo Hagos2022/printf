@@ -1,4 +1,4 @@
-# 0x11.C - printf
+# 0x11. C - printf
 
 
 
@@ -14,7 +14,7 @@
 
 The printf function sends formatted output to stdout.
 
-A custom _printf() for learning purposes was developed by ALX_SE cohort  #10 students Hagos & Hailemariam\.
+A custom _printf() for learning purposes was developed by ALX_SE cohort  #10 students [Hagos](https://github.com/Hagos2022) & [Hailemariam](https://github.com/haile7516)\.
 
 _printf() function format string is a character string, beginning and ending in its initial shift state, if any.
 
@@ -390,6 +390,6 @@ All the above options work well together.
 
 
 
-- Hagos Mehari
+- [Hagos Mehari](https://github.com/Hagos2022)
 
-- HAILEMARIAM GEBREMARIAM
+- [HAILEMARIAM GEBREMARIAM](https://github.com/haile7516)
