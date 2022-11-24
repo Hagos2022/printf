@@ -17,9 +17,10 @@
 
 typedef struct format
 {
-char *id;
-int (*f)();
+	char *id;
+	int (*f)();
 } convert_match;
+
 int printf_pointer(va_list val);
 int printf_hex_aux(unsigned long int num);
 int printf_HEX_aux(unsigned int num);
@@ -44,5 +45,9 @@ int printf_string(va_list val);
 int _putchar(char c);
 int _printf(const char *format, ...);
 
+int get_flags(const char *format, int *i);
+int get_width(const char *format, int *i, va_list list);
+int get_precision(const char *format, int *i, va_list list);
+int get_size(const char *format, int *i);
 
 #endif
